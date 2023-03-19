@@ -25,7 +25,14 @@ def predict():
     #new = [[7, 215, 12000, 7, 334, 415, 16, 80, 3]]
     # results = loaded_model.predict(new)
 
+    '''
+        Load model
+    '''
     loaded_model = load_model(ai_model)
+
+    '''
+        Fetch payload
+    '''
     ph = request.json['ph']
     hardness = request.json['hardness']
     solids = request.json['solids']
@@ -38,6 +45,7 @@ def predict():
 
     new = [[ph, hardness, solids, chloramines, sulphate, conductivity, organic_carbon, trihalomethanes, turbidity]]
     
+    #Predict payload
     results = predict_model(loaded_model, data=new)
 
     return results
