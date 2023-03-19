@@ -24,4 +24,8 @@ The purpose of this section is to develop a fully functioning Machine Learning M
 
 The dataset for ML training purposes was provided by Power Learn Project as it has been considered effective for the objective of our AI tool.
 
+**Authors**
+* [Joan Njeri](https://github.com/jnjerin)
+* [David Nene](https://github.com/davidnene)
+
 
